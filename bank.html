@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link rel="shortcut icon" href="./image/bank.png" type="image/x-icon" />
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center mt-4 text-4xl text-gray-600 capitalize">
+        Wellcome my <span class="text-red-400 font-mono">pribet</span> bank
+      </h1>
+    </header>
+    <main>
+      <section
+        class="w-9/12 mx-auto mt-14 flex justify-around gap-6 lg:gap-0 flex-col sm:flex-row text-center"
+      >
+        <div
+          class="bg-lime-800 px-14 py-6 text-white shadow-xl rounded-md text-left"
+        >
+          <h1 class="text-2xl">Deposite</h1>
+          <p class="text-4xl">$<span id="dipositeAmount">00</span></p>
+        </div>
+        <div
+          class="bg-red-300 px-14 py-6 text-white shadow-xl rounded-md text-left"
+        >
+          <h1 class="text-2xl">Withdraw</h1>
+          <p class="text-4xl">$<span id="withdrawAmount">00</span></p>
+        </div>
+        <div
+          class="bg-amber-400 px-14 py-6 text-white shadow-xl rounded-md text-left"
+        >
+          <h1 class="text-2xl">Balance</h1>
+          <p class="text-4xl">$<span id="totalAmount">00</span></p>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section
+        class="mt-16 sm:mt-5 md:mt-14 flex w-9/12 gap-4 lg:gap-0 mx-auto justify-around flex-col lg:flex-row text-center"
+      >
+        <div
+          class="bg-amber-400 px-4 py-6 text-white shadow-xl rounded-md text-left lg:w-5/12"
+        >
+          <h1 class="text-2xl">Please Deposite</h1>
+          <div class="mt-5">
+            <input
+              class="mb-2 outline-none rounded-sm px-3 py-1 text-slate-700 font-mono"
+              type="text"
+              name="inputDeposite"
+              id="inputDeposite"
+              placeholder="$ Amount you want to deposite "
+            />
+            <br />
+            <button class="btn btn-primary" id="depositeBtn">Deposite</button>
+          </div>
+        </div>
+        <div
+          class="bg-slate-500 px-4 py-6 text-white shadow-xl rounded-md text-left lg:w-5/12"
+        >
+          <h1 class="text-2xl">Please Withdraw</h1>
+          <div class="mt-5">
+            <input
+              class="mb-2 outline-none rounded-sm px-3 py-1 text-slate-700 font-mono"
+              type="text"
+              name="inputDeposite"
+              id="inpuWithdraw"
+              placeholder="$ Amount you want to deposite "
+            />
+            <br />
+            <button class="btn btn-primary" id="withdrawBtn">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/diposite.js"></script>
+    <script src="./js/withdraw.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link rel="shortcut icon" href="./image/bank.png" type="image/x-icon" />
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <h1 class="text-5xl text-center font-mono mt-2 text-green-400 py-2">
+        hello my <span class="text-red-600">pribet</span>, bank
+      </h1> -->
+    </header>
+    <main>
+      <!-- Login form -->
+      <div>
+        <div
+          class="relative flex flex-col justify-center h-screen overflow-hidden"
+        >
+          <div
+            class="w-full p-6 m-auto bg-white rounded-md shadow-2xl lg:max-w-lg"
+          >
+            <h1 class="text-3xl font-semibold text-center text-purple-700">
+              Please login
+            </h1>
+            <div class="space-y-4">
+              <div>
+                <label class="label">
+                  <span class="text-base label-text">Email</span>
+                </label>
+                <input
+                  id="inputEmail"
+                  type="text"
+                  placeholder="Email Address"
+                  class="w-full input input-bordered input-primary"
+                />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="text-base label-text">Password</span>
+                </label>
+                <input
+                  id="inputPassword"
+                  type="password"
+                  placeholder="Enter Password"
+                  class="w-full input input-bordered input-primary"
+                />
+              </div>
+              <a
+                href="#"
+                class="text-xs text-gray-600 hover:underline hover:text-blue-600"
+                >Forget Password?</a
+              >
+              <div>
+                <button class="btn btn-primary" id="loginBtn">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
